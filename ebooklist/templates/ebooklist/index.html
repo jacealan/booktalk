@@ -1,0 +1,24 @@
+<!-- the responsive viewport meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ebooklist/style.css' %}" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container" align="center">
+    <h1>전자책 구매목록 수집<br /><br /></h1>
+    <h2>전자책(e북) 구매 목록을 수집하고 정리하고 싶으신가요?<br /><br /></h2>
+    <a href="{% url 'ebooklist:ids' %}" class="btn btn-warning btn-lg">수집하려면 클릭!</a>
+  </div>
+</div>
